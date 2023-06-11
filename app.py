@@ -1,5 +1,4 @@
 from flask import Flask,request,jsonify
-from app import app
 import requests
 
 app = Flask(__name__)
@@ -33,7 +32,3 @@ def fetch_conversion_factor(source,destination):
     print("Response : ",response)
     print("Target : ",target)
     return target
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
